@@ -14,7 +14,7 @@ class Eblook < Formula
                           "--disable-silent-rules",
                           "--prefix=#{prefix}",
                           "--enable-ebu",
-                          "--with-ebu-conf=#{prefix}/etc/ebu.conf"
+                          "--with-ebu-conf=/opt/homebrew/etc/ebu.conf"
     system "make", "install"
   end
 end
