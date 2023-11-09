@@ -13,7 +13,7 @@ class Eblook < Formula
                           "--disable-dependency-tracking",
                           "--disable-silent-rules",
                           "--prefix=#{prefix}",
-                          "--with-ebu-conf=/usr/local/etc/ebu.conf"
+                          "--with-ebu-conf=#{prefix}/etc/ebu.conf"
     system "make", "install"
   end
 end
